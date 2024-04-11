@@ -50,18 +50,8 @@
         function getReading3() {
             $.get(url3, { access_token: accessToken }, callback3);
         }
-    </script>
-</head>
 
-<body>
-<div>
-    <div id="gauge" class="200x160px"></div>
-    <div id="gauge2" class="200x160px"></div>
-    <div id="gauge3" class="200x160px"></div>
-</div>
-
-<script>
-    var g = new JustGage({
+         var g = new JustGage({
         id: "gauge",
         value: 0,
         min: 0,
@@ -84,8 +74,16 @@
         max: 400,
         title: "Fahrenheit"
     });
-    getReading3();
-</script>
+    getReading3();        
+    </script>
+</head>
+
+<body>
+<div>
+    <div id="gauge" class="200x160px"></div>
+    <div id="gauge2" class="200x160px"></div>
+    <div id="gauge3" class="200x160px"></div>
+</div>
 
 </body>
 </html>
