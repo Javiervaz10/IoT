@@ -15,6 +15,7 @@
         function callback(data, status) {
             if (status == "success") {
                 var temp = parseFloat(data.result).toFixed(2);
+                console.log(temp);
                 g.refresh(temp);
             } else {
                 alert("There was a problem");
@@ -25,6 +26,7 @@
             if (status2 == "success") {
                 var temp2 = parseFloat(data2.result).toFixed(2);
                 g2.refresh(temp2);
+                console.log(temp2);
             } else {
                 alert("There was a problem");
             }
@@ -34,6 +36,7 @@
             if (status3 == "success") {
                 var temp3 = parseFloat(data3.result).toFixed(2);
                 g3.refresh(temp3);
+                console.log(temp3);
             } else {
                 alert("There was a problem");
             }
@@ -68,7 +71,7 @@
         max: 400,
         title: "Temperature (C)"
     });
-    
+    getReading();
 </script>
 <script>
     var g2 = new JustGage({
@@ -78,7 +81,7 @@
         max: 400,
         title: "Humidity"
     });
-    
+    getReading2();
 </script>
 <script>
     var g3 = new JustGage({
@@ -88,8 +91,6 @@
         max: 400,
         title: "Fahrenheit"
     });
-    getReading();
-    getReading2();
     getReading3();     
 </script>
 </body>
