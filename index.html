@@ -60,14 +60,6 @@
     <div id="gauge3" class="200x160px"></div>
 </div>
 <script>
-    var g = new JustGage({
-        id: "gauge",
-        value: 0,
-        min: 0,
-        max: 400,
-        title: "Temperature (C)"
-    });
-    getReading();
     var g2 = new JustGage({
         id: "gauge2",
         value: 0,
@@ -84,6 +76,15 @@
         title: "Fahrenheit"
     });
     getReading3();     
+    var g = new JustGage({
+        id: "gauge",
+        value: 0,
+        min: 0,
+        max: 400,
+        title: "Temperature (C)"
+    });
+    getReading();
+    
 </script>
 </body>
 </html>
